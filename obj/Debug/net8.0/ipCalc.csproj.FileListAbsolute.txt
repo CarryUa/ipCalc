@@ -12,3 +12,4 @@ C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\refin
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.pdb
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.genruntimeconfig.cache
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ref\ipCalc.dll
+C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.sourcelink.json

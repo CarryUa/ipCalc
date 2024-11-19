@@ -21,7 +21,6 @@ class IP()
         string nstr = "";
         foreach (string currentSygment in parsedString)
         {
-
             foreach (char c in currentSygment)
             {
                 if (c == '0')
@@ -29,12 +28,10 @@ class IP()
                 else if (c == '1')
                     nstr += '0';
             }
-
             nstr += '.';
         }
         nstr = nstr.Remove(nstr.Length - 1);
         return nstr;
-
     }
     public string InvertString(string str)
     {
@@ -50,35 +47,31 @@ class IP()
         byte IPAsByte;
         string IPAsByteAsString = "";
         string[] parsedIP = ParseIPString(IP);
-        string currentSygment;
         int n;
-        for (int i = 0; i < parsedIP.Length; i++)
+        foreach (string currentSygment in parsedIP)
         {
             n = 0;
             IPAsByte = 0;
-            currentSygment = parsedIP[i];
-            for (int j = parsedIP[i].Length - 1; j >= 0; j--)
+            foreach (char c in currentSygment)
             {
-
-                IPAsByte += Convert.ToByte(Math.Pow(2, n) * Convert.ToDouble(Convert.ToString(currentSygment[j])));
+                IPAsByte += Convert.ToByte(Math.Pow(2, n) * Convert.ToDouble(Convert.ToString(c)));
                 n++;
             }
             IPAsByteAsString += Convert.ToString(IPAsByte);
-            if (i != 3)
-                IPAsByteAsString += ".";
+            IPAsByteAsString += ".";
         }
+        IPAsByteAsString = IPAsByteAsString.Remove(IPAsByteAsString.Length - 1);
         return IPAsByteAsString;
-
     }
     public string ToBinary(string IP)
     {
         byte currentSygment;
         string binIP = "";
         string[] parsedIP = ParseIPString(IP);
-        for (int i = 0; i < parsedIP.Length; i++)
+        foreach (string Sygment in parsedIP)
         {
             string binIPTransit = "";
-            currentSygment = Convert.ToByte(parsedIP[i]);
+            currentSygment = Convert.ToByte(Sygment);
             do
             {
                 binIPTransit += Convert.ToString(currentSygment % 2);
@@ -86,13 +79,11 @@ class IP()
             } while (currentSygment >= 1);
 
             binIP += InvertString(binIPTransit);
-
-            if (i != 3)
-                binIP += ".";
+            binIP += ".";
         }
+        binIP = binIP.Remove(binIP.Length - 1);
         parsedIP = binIP.Split(".");
         binIP = "";
-
         for (int i = 0; i < parsedIP.Length; i++)
         {
             if (parsedIP[i].Length < 8)
@@ -107,13 +98,12 @@ class IP()
             if (i != 3)
                 binIP += ".";
         }
-
         return binIP;
     }
     public void SetIP(string nIP)
     {
         ip = "";
-        string[] parsednIP = nIP.Split(".");
+        string[] parsednIP = ParseIPString(nIP);
         bool errors = parsednIP.Length != 4;
         foreach (string Sygment in parsednIP)
         {
@@ -129,16 +119,15 @@ class IP()
         }
         else
             Console.Write("     [ERROR]Wrong IP format!! " + "Tryed seting IP to \"" + nIP + "\"" + "\n");
-        Console.Write("     Mask as binary: " + ToBinary(ip) + "\n");
-        Console.Write("     IP as String: \"" + ip + "\"" + "\n");
+        Console.Write("     IP as String: \"" + ip + "\"");
+        Console.SetCursorPosition(50, Console.GetCursorPosition().Top);
+        Console.Write("(" + ToBinary(ip) + ")" + "\n");
         Console.Write("-------------------------------------------------------------------------------------------" + "\n \n");
-
-
     }
     public void SetMask(string nIP)
     {
         mask = "";
-        string[] parsednIP = nIP.Split(".");
+        string[] parsednIP = ParseIPString(nIP);
         bool errors = parsednIP.Length != 4;
         maskBitsNumber = 0;
         foreach (string Sygment in parsednIP)
@@ -158,24 +147,24 @@ class IP()
             }
             Console.Write("     Finished! " + "Tryed seting mask to \"" + nIP + "\"" + "\n");
         }
-
         else
             Console.Write("     [ERROR]Wrong mask format! " + "Tryed seting mask to \"" + nIP + "\"" + "\n");
 
-        Console.Write("     Mask as binary: " + ToBinary(mask) + "\n");
         Console.Write("     Mask as String: \"" + ip + "\" \n");
+        Console.SetCursorPosition(50, Console.GetCursorPosition().Top);
+        Console.Write("(" + ToBinary(mask) + ")" + "\n");
         Console.Write("-------------------------------------------------------------------------------------------" + "\n \n");
-
-
     }
     public void CalculateNetAddress()
     {
         string nNetAddress = "";
-        for (int i = 0; i < ToBinary(ip).Length; i++)
+        char[] binIP = ToBinary(ip).ToCharArray();
+        char[] binMask = ToBinary(mask).ToCharArray();
+        for (int i = 0; i < binIP.Length; i++)
         {
-            if (ToBinary(ip).ToCharArray()[i] == '1' && ToBinary(mask).ToCharArray()[i] == '1')
+            if (binIP[i] == '1' && binMask[i] == '1')
                 nNetAddress += "1";
-            else if (ToBinary(ip).ToCharArray()[i] == '.' || ToBinary(mask).ToCharArray()[i] == '.')
+            else if (binIP[i] == '.' || binMask[i] == '.')
                 nNetAddress += ".";
             else
                 nNetAddress += "0";
@@ -204,7 +193,7 @@ class IP()
     }
     public void CalculateMinHostAddress()
     {
-        string[] parsedIP = networkAddress.Split(".");
+        string[] parsedIP = ParseIPString(networkAddress);
         string nIP = "";
         byte lastSygment = Convert.ToByte(parsedIP[3]);
         lastSygment++;
@@ -219,7 +208,7 @@ class IP()
     }
     public void CalculateMaxHostAddress()
     {
-        string[] parsedIP = broadcatsAddress.Split(".");
+        string[] parsedIP = ParseIPString(broadcatsAddress);
         string nIP = "";
         byte lastSygment = Convert.ToByte(parsedIP[3]);
         lastSygment--;
