@@ -150,7 +150,7 @@ class IP()
         else
             Console.Write("     [ERROR]Wrong mask format! " + "Tryed seting mask to \"" + nIP + "\"" + "\n");
 
-        Console.Write("     Mask as String: \"" + ip + "\" \n");
+        Console.Write("     Mask as String: \"" + ip + "\"");
         Console.SetCursorPosition(50, Console.GetCursorPosition().Top);
         Console.Write("(" + ToBinary(mask) + ")" + "\n");
         Console.Write("-------------------------------------------------------------------------------------------" + "\n \n");
