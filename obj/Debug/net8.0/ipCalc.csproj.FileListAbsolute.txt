@@ -13,3 +13,11 @@ C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCal
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.genruntimeconfig.cache
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ref\ipCalc.dll
 C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.sourcelink.json
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.AssemblyInfoInputs.cache
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.AssemblyInfo.cs
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.csproj.CoreCompileInputs.cache
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.sourcelink.json
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.dll
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\refint\ipCalc.dll
+C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\obj\Debug\net8.0\ipCalc.pdb

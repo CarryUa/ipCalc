@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ipCalc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bc0784f71cc9af0c5cfe5706cea38b2e35465a4e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac50818b7757d360ed378cbddc6edc13bd5fd940")]
 [assembly: System.Reflection.AssemblyProductAttribute("ipCalc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ipCalc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

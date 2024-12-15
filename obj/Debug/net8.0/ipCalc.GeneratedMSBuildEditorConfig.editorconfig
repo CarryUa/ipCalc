@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ipCalc
-build_property.ProjectDir = C:\Users\mosuk\OneDrive\Desktop\School\podst. prog\ipCalc\
+build_property.ProjectDir = C:\Users\mosuk\OneDrive\Desktop\code\School\podst. prog\ipCalc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

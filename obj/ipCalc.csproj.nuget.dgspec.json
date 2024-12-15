@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mosuk\\OneDrive\\Desktop\\School\\podst. prog\\ipCalc\\ipCalc.csproj": {}
+    "C:\\Users\\mosuk\\OneDrive\\Desktop\\code\\School\\podst. prog\\ipCalc\\ipCalc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mosuk\\OneDrive\\Desktop\\School\\podst. prog\\ipCalc\\ipCalc.csproj": {
+    "C:\\Users\\mosuk\\OneDrive\\Desktop\\code\\School\\podst. prog\\ipCalc\\ipCalc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mosuk\\OneDrive\\Desktop\\School\\podst. prog\\ipCalc\\ipCalc.csproj",
+        "projectUniqueName": "C:\\Users\\mosuk\\OneDrive\\Desktop\\code\\School\\podst. prog\\ipCalc\\ipCalc.csproj",
         "projectName": "ipCalc",
-        "projectPath": "C:\\Users\\mosuk\\OneDrive\\Desktop\\School\\podst. prog\\ipCalc\\ipCalc.csproj",
+        "projectPath": "C:\\Users\\mosuk\\OneDrive\\Desktop\\code\\School\\podst. prog\\ipCalc\\ipCalc.csproj",
         "packagesPath": "C:\\Users\\mosuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mosuk\\OneDrive\\Desktop\\School\\podst. prog\\ipCalc\\obj\\",
+        "outputPath": "C:\\Users\\mosuk\\OneDrive\\Desktop\\code\\School\\podst. prog\\ipCalc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mosuk\\AppData\\Roaming\\NuGet\\NuGet.Config"
